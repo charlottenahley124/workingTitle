@@ -1,6 +1,6 @@
 local ui = require "ui"
 
-test = {}
+test = {} -- warning: global variable
 
 return function ()
 	test = {}
