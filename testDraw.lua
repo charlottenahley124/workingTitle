@@ -1,5 +1,6 @@
 local ui = require "ui"
 
 return function ()
-  ui.drawGrid()
+	love.graphics.translate(unpack(test.viewOffset))
+	love.graphics.draw(test.grid, 0, 0)
 end

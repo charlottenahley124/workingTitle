@@ -11,6 +11,7 @@ function setCurrentState (state, ...)
   current.exit = state.exit
   love.update = state.update
   love.draw = state.draw
+  current.load()
 end
 
 function love.load ()
