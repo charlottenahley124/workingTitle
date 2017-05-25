@@ -1,20 +1,20 @@
 require "states"
 
-current = {
+currentState = {
+  -- there isn't love.load or love.exit so...
   load = nil,
   exit = nil
 }
 
 function setCurrentState (state, ...)
-  current.heap = state.heap
-  current.load = state.load
-  current.exit = state.exit
+  currentState.load = state.load
+  currentState.exit = state.exit
   love.update = state.update
   love.draw = state.draw
-  current.load()
 end
 
 function love.load ()
   testState = states.formatRaw("testState")
   setCurrentState(testState)
+  currentState.load()
 end
