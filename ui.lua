@@ -1,4 +1,5 @@
 local drawGrid = function (map)
+	-- takes a 2d table and for each element that isn't a zero it makes a wireframe tile
   for i,v in ipairs(map) do
     for j,w in ipairs(v) do
       if w ~= 0 then
