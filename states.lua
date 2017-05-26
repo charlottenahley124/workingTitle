@@ -5,7 +5,7 @@ states = { -- warning: this is global
   -- unformatted states are a list of strings where the names corrispond to the names of functions stored in their respective type catagory
   -- the reason why unformatted states exist is so that manufacturing new states is easy, and I was too lazy to use something like json to store the info
   -- also an important feature of this system which should be preserved in subsequent iterations of this code is shared substates between stateGroups
-stateGroups = {
+	stateGroups = {
     -- stateName | updateName | drawName
     testState = {"testLoad", "testUpdate", "testDraw", "testExit"}
   },
